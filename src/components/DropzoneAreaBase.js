@@ -309,12 +309,10 @@ class DropzoneAreaBase extends React.PureComponent {
                         {...alertSnackbarProps}
                         open={openSnackBar}
                         onClose={this.handleCloseSnackbar}
+                        variant={snackbarVariant}
+                        message={snackbarMessage}
                     >
-                        <SnackbarContentWrapper
-                            onClose={this.handleCloseSnackbar}
-                            variant={snackbarVariant}
-                            message={snackbarMessage}
-                        />
+                        
                     </Snackbar>
                 }
             </Fragment>

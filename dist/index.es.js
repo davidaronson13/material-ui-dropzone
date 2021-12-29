@@ -303,7 +303,7 @@ process.env.NODE_ENV !== "production" ? SnackbarContentWrapper.propTypes = {
   onClose: PropTypes.func,
   variant: PropTypes.oneOf(['success', 'warning', 'error', 'info']).isRequired
 } : void 0;
-var SnackbarContentWrapper$1 = withStyles(styles$1, {
+withStyles(styles$1, {
   name: 'MuiDropzoneSnackbar'
 })(SnackbarContentWrapper);
 
@@ -663,8 +663,6 @@ var DropzoneAreaBase = /*#__PURE__*/function (_React$PureComponent) {
         autoHideDuration: 6000
       }, alertSnackbarProps, {
         open: openSnackBar,
-        onClose: this.handleCloseSnackbar
-      }), /*#__PURE__*/createElement(SnackbarContentWrapper$1, {
         onClose: this.handleCloseSnackbar,
         variant: snackbarVariant,
         message: snackbarMessage
